@@ -7,6 +7,7 @@ const brands = [
   { label: "Kantech", href: "/access-control" },
   { label: "American Dynamics", href: "/american-dynamics" },
   { label: "CEM Systems", href: "/cem-systems" },
+  { label: "Software House", href: "/software-house" },
 ];
 
 export function OurBrandsMenu() {
