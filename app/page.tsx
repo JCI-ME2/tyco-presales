@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ShieldCheck, Video, MonitorPlay, Camera, KeyRound } from "lucide-react";
+import { ShieldCheck, Video, MonitorPlay, Camera, KeyRound, Building2 } from "lucide-react";
 
 export default function Home() {
   return (
@@ -89,7 +89,7 @@ export default function Home() {
           {/* Divider */}
           <div className="h-[3px] w-full max-w-2xl bg-gradient-to-r from-jci-teal to-jci-blue rounded-full" />
 
-          {/* Bottom row of two */}
+          {/* Bottom row of three */}
           <div className="flex justify-center gap-6 flex-wrap">
             <Link
               href="/american-dynamics"
@@ -120,6 +120,16 @@ export default function Home() {
               <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
                 AC2000 software, controllers &amp; readers.
               </p>
+              <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-jci-teal to-jci-blue" />
+            </Link>
+
+            <Link
+              href="/software-house"
+              className="group relative w-52 overflow-hidden rounded-2xl border border-border bg-card p-6 text-center shadow-sm transition-all hover:-translate-y-0.5 hover:border-jci-blue/40 hover:shadow-lg"
+            >
+              <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-jci-blue/10 text-jci-blue"><Building2 className="h-6 w-6" /></div>
+              <div className="mt-3 text-lg font-bold text-jci-blue text-balance">Software House</div>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">CCURE 9000 access control solutions.</p>
               <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-jci-teal to-jci-blue" />
             </Link>
           </div>
