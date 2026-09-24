@@ -1,11 +1,12 @@
 import { ProductSelector } from "@/components/product-selector";
 import { AccessControlVideo } from "@/components/access-control-video";
+import { videoFrames } from "@/data/video-frames";
 import { cardReaders } from "@/data/access-control";
 
 export default function CardReadersPage() {
   return (
     <>
-      <AccessControlVideo frameId="card-readers" frameTitle="Card Readers" />
+      <AccessControlVideo {...videoFrames.cardReaders} />
       <ProductSelector
       category="Card Readers"
       title="Card Readers"

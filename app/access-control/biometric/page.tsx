@@ -1,11 +1,12 @@
 import { ProductSelector } from "@/components/product-selector";
 import { AccessControlVideo } from "@/components/access-control-video";
+import { videoFrames } from "@/data/video-frames";
 import { biometric } from "@/data/access-control";
 
 export default function BiometricPage() {
   return (
     <>
-      <AccessControlVideo frameId="biometric-access" frameTitle="Biometric Access" />
+      <AccessControlVideo {...videoFrames.biometricAccess} />
       <ProductSelector
       category="Biometric"
       title="Biometric Readers"

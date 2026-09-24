@@ -1,11 +1,12 @@
 import { ProductSelector } from "@/components/product-selector";
 import { AccessControlVideo } from "@/components/access-control-video";
+import { videoFrames } from "@/data/video-frames";
 import { controllers } from "@/data/access-control";
 
 export default function ControllersPage() {
   return (
     <>
-      <AccessControlVideo frameId="controllers" frameTitle="Controllers" />
+      <AccessControlVideo {...videoFrames.controllers} />
       <ProductSelector
       category="Controllers"
       title="Controllers"
