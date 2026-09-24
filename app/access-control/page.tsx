@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Cpu, Server, ScanLine, Fingerprint, Lock, GraduationCap, DoorOpen, Settings } from "lucide-react";
 import { software, controllers, cardReaders, biometric, magLocks } from "@/data/access-control";
 import { AccessControlVideo } from "@/components/access-control-video";
+import { videoFrames } from "@/data/video-frames";
 
 const categories = [
   { href: "/access-control/software", label: "Software", desc: `EntraPass editions, licenses & integrations (${software.length} parts).`, Icon: Server },
@@ -15,7 +16,7 @@ const categories = [
 export default function AccessControlIndex() {
   return (
     <>
-      <AccessControlVideo frameId="access-control" frameTitle="Access Control" />
+      <AccessControlVideo {...videoFrames.accessControl} />
 
       <section className="mx-auto max-w-[1400px] px-6 py-12">
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">

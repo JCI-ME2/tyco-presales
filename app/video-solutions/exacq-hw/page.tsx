@@ -1,10 +1,11 @@
 import { VideoProductSelector } from "@/components/video-product-selector";
 import { AccessControlVideo } from "@/components/access-control-video";
+import { videoFrames } from "@/data/video-frames";
 
 export default function ExacqHwPage() {
   return (
     <>
-      <AccessControlVideo frameId="exacq-hardware" frameTitle="Exacq Hardware" />
+      <AccessControlVideo {...videoFrames.exacqHardware} />
       <VideoProductSelector
         sheet="Exacq HW"
         category="Exacq Hardware"

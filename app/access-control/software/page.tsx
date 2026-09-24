@@ -1,11 +1,12 @@
 import { ProductSelector } from "@/components/product-selector";
 import { AccessControlVideo } from "@/components/access-control-video";
+import { videoFrames } from "@/data/video-frames";
 import { software } from "@/data/access-control";
 
 export default function SoftwarePage() {
   return (
     <>
-      <AccessControlVideo frameId="access-control-software" frameTitle="Access Control Software" />
+      <AccessControlVideo {...videoFrames.accessControlSoftware} />
       <ProductSelector
       category="Software"
       title="EntraPass Software"

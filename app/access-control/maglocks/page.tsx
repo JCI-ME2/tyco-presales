@@ -1,11 +1,12 @@
 import { ProductSelector } from "@/components/product-selector";
 import { AccessControlVideo } from "@/components/access-control-video";
+import { videoFrames } from "@/data/video-frames";
 import { magLocks } from "@/data/access-control";
 
 export default function MagLocksPage() {
   return (
     <>
-      <AccessControlVideo frameId="maglocks" frameTitle="Maglocks" />
+      <AccessControlVideo {...videoFrames.maglocks} />
       <ProductSelector
       category="MagLocks"
       title="Magnetic Locks"

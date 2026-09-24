@@ -1,10 +1,11 @@
 import { VideoProductSelector } from "@/components/video-product-selector";
 import { AccessControlVideo } from "@/components/access-control-video";
+import { videoFrames } from "@/data/video-frames";
 
 export default function IllustraCamerasHolisNvrPage() {
   return (
     <>
-      <AccessControlVideo frameId="holis-nvr" frameTitle="Holis NVR" />
+      <AccessControlVideo {...videoFrames.holisNvr} />
       <VideoProductSelector
         sheet="Holis NVR"
         category="Holis NVR"

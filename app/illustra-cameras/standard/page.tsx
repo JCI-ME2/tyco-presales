@@ -1,10 +1,11 @@
 import { VideoProductSelector } from "@/components/video-product-selector";
 import { AccessControlVideo } from "@/components/access-control-video";
+import { videoFrames } from "@/data/video-frames";
 
 export default function IllustraStandardPage() {
   return (
     <>
-      <AccessControlVideo frameId="illustra-standard" frameTitle="Illustra Standard" />
+      <AccessControlVideo {...videoFrames.illustraStandard} />
       <VideoProductSelector
         sheet="Illustra Standard"
         category="Illustra Standard"
