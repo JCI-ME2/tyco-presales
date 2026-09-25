@@ -21,8 +21,9 @@ export default function Home() {
             width={1600}
             height={636}
             className="w-full h-auto object-contain"
-            controls
-            muted={false}
+                  controls
+                  preload="metadata"
+                  muted={false}
           >
             <source
               src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/videos/Recording%20with%20BG%20%281%29.mp4`}

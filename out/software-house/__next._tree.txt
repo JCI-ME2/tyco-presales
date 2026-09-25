@@ -1,0 +1,4 @@
+:HL["/_next/static/chunks/2cwkxv4_l316p.css","style"]
+:HL["/_next/static/media/7da1b2d9318915d2-s.p.1pt2_06aomutc.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/dc6d2a64e9dbf3bc-s.p.3mjzw95c0-_52.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"software-house","param":null,"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"VlIwz--t1kFB2xhElY8en"}
